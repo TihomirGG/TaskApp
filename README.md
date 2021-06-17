@@ -20,6 +20,7 @@ npm run json - to start server
 
 ```
 npm run build
+npm run json
 ```
 
 ### Lints and fixes files
