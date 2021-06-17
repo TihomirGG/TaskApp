@@ -2,7 +2,7 @@
 <template>
   <header>
     <div class="header">
-      <h2>Task Tracker</h2>
+      <h2 class="header__title">Task Tracker</h2>
       <button
         @click="onClick"
         :class="['header__btn', showForm ? 'red' : 'green']"
@@ -10,7 +10,7 @@
         {{ showForm ? "Close" : "Add Task" }}
       </button>
     </div>
-    <TaskForm :class="[showForm ? '' : 'hidden']" />
+    <TaskForm @task-add="addTask" :class="[showForm ? '' : 'hidden']" />
   </header>
 </template>
 
@@ -24,6 +24,9 @@ export default {
   methods: {
     onClick () {
       this.showForm = !this.showForm
+    },
+    addTask (task) {
+      this.$emit('add-task', task)
     }
   }
 }
@@ -34,6 +37,9 @@ export default {
   display: flex;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
+  &__title {
+      color:#000;
+  }
   &__btn {
     align-self: center;
     flex-basis: 25%;

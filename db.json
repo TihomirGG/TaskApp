@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "task": "Meeting with friends",
+      "date": "11th March at 1:30pm",
+      "reminder": "false"
+    },
+    {
+      "task": "Gym workout",
+      "date": "18th March 12:00pm",
+      "reminder": false,
+      "id": "uX59iFF"
+    },
+    {
+      "task": "Go to doctor",
+      "date": "25th May at 15:30pm",
+      "reminder": true,
+      "id": "IC4f7TH"
+    }
+  ]
+}
